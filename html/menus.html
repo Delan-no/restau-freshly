@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant</title>
+    <meta name="description" content=" Freshly Restaurant est un meilleur restaurant qui assure la qualité des menus">
+    <meta name="keywords" content="Restaurant, Freshly , food and drink">
+
+    <!-- Importation du jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/50408e730b.js" crossorigin="anonymous"></script>
+    <!-- Intégration du syle personnel -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Intégration du plugin Mixitup -->
+    <script src="../mixitup-3/dist/mixitup.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- le contenu de la page web -->
+
+    <div class="container">
+        <!-- le header -->
+        <header class="header">
+            <a href="#">
+                <img src="../instructions/ressources/images/logo.png" alt="logo du restaurant"><span> FRESHLY
+                    RESTAURANT</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a class="active" href="./menus.html">Menus</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin de  header -->
+        <main class="main">
+            <section class="details_menus">
+                <h3>Details of our menus</h3>
+                <p>Choose your main course according to your menu !</p>
+                <div class="button">
+                    <button data-filter="all" class="active">All</button>
+                    <button data-filter=".meat">Meat</button>
+                    <button data-filter=".vegan">Vegan</button>
+                    <button data-filter=".fish">Fish</button>
+                </div>
+                <div class="img_mix" id="img">
+                    <div class="mix fish img_hover">
+                        <img src="../instructions/ressources/menus/fish-01.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Grilled
+                                mussels </p>
+                        </div>
+                    </div>
+
+                    <div class="mix vegan img_hover">
+                        <img src="../instructions/ressources/menus/vegan-03.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Mixed
+                                vegetables </p>
+                        </div>
+                    </div>
+
+                    <div class="mix meat img_hover">
+                        <img src="../instructions/ressources/menus/meat-03.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Freshly
+                                kebabs </p>
+                        </div>
+                    </div>
+
+                    <div class="mix fish img_hover">
+                        <img src="../instructions/ressources/menus/fish-02.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Cajun
+                                shrimp </p>
+                        </div>
+                    </div>
+
+                    <div class="mix meat img_hover">
+                        <img src="../instructions/ressources/menus/meat-01.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Freshly
+                                burger </p>
+                        </div>
+                    </div>
+
+                    <div class="mix vegan img_hover">
+                        <img src="../instructions/ressources/menus/vegan-02.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Grilled
+                                eggplants </p>
+                        </div>
+                    </div>
+
+                    <div class="mix meat img_hover">
+                        <img src="../instructions/ressources/menus/meat-02.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Beef stew
+                                with pasta </p>
+                        </div>
+                    </div>
+
+                    <div class="mix fish img_hover">
+                        <img src="../instructions/ressources/menus/fish-03.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Grilled
+                                salmon </p>
+                        </div>
+                    </div>
+
+                    <div class="mix vegan img_hover">
+                        <img src="../instructions/ressources/menus/vegan-01.jpg" alt="image details">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Vegetable
+                                Jambalaya </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Deserts</h3>
+                <p>Here are the deserts you can choose to finish your meal (included in your menu).</p>
+                <div class="deserts deser_thover" id="deserts">
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/desert-01.jpg" alt="desert">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Tiramisu
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/desert-02.jpg" alt="desert">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Freshly
+                                Pancakes </p>
+                        </div>
+                    </div>
+
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/desert-03.jpg" alt="desert">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Redberries
+                                cup </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- partie de cocktails -->
+            <section>
+                <h3>Cocktails</h3>
+                <p>Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included
+                    in the menu).</p>
+                <div class="cocktails deser_thover" id="cocktails">
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/drink-01.jpg" alt="">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Winter
+                                Whiskey </p>
+                        </div>
+                    </div>
+
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/drink-02.jpg" alt="">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Paloma
+                                cocktail </p>
+                        </div>
+                    </div>
+
+                    <div class="img_hover">
+                        <img src="../instructions/ressources/menus/drink-03.jpg" alt="knife">
+                        <div class="choix_menus">
+                            <p> <img src="../instructions/ressources/images/fork-knife.svg" alt="fouchette"> Bellini cocktail </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- le contenu -->
+
+    </div>
+    <!--  le pied de page -->
+    <footer>
+        <address>
+            <div class="aside">
+                <section>
+                    <h4>Opening hours</h4>
+                    <p>Monday: Closed</p>
+                    <p>Tue-Wed : 9am - 10pm</p>
+                    <p>Thu-Fri : 9am - 10pm</p>
+                    <p>Sat-Sun : 5pm - 10pm</p>
+                </section>
+                <section>
+                    <h4>Contact</h4>
+                    <p>13 Christopher Street</p>
+                    <p>New York,</p>
+                    <p>NY 10014-3543</p>
+                    <p><a href="tel:+22994371002">+229 94 37 10 02</a></p>
+                </section>
+                <section>
+                    <h4>Social networks</h4>
+                    <a href="kotcho Délanno" class="fab fa-facebook-f"></a>
+                    <a href="instagram" class="fab fa-instagram"></a>
+                    <a href="pinterest" class="fab fa-pinterest-p"></a>
+                </section>
+            </div>
+        </address>
+
+        <div class="footer">
+            <img src="../logo-3wa.png" alt="logo de la 3w  Academy">
+            <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">
+                    pour l'usage personnel des étudiants.
+                    Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification -
+                    International
+                </a>.</p>
+            <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+                    href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a
+                    href="#">Catherine Denos</a>.</p><br><br>
+            <p style="font-size: 20px; text-align: center; color: rgb(87, 165, 42);">cet exrcice a été réalisé par <strong>Délanno KOTCHO, </strong>étudiant en informatique de dévéloppement à HIGHFIVE University</p>
+        </div>
+    </footer>
+    <!--  fin du pied de page -->
+
+
+
+    <!-- <script>
+            let mixer = mixitup(".parent");
+        </script>; -->
+
+    <script>
+        let mixer = mixitup(".img_mix");
+    </script>
+</body>
+
+</html>

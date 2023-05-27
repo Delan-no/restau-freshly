@@ -1,0 +1,478 @@
+@import url("./font-face/style.css");
+@import url("./media_query/tablette.css");
+@import url("./media_query/desktop.css");
+@import url("./css/about.css");
+@import url("./css/contact.css");
+@import url("./css/menus.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container,.aside{
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+}
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1,5625rem;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+body {
+    font-size: 1.122rem;
+    font-family: Athiti;
+}
+
+/****** les variables
+Marron : #4c4343
+Beige : #ebe3db
+Rouge : #950000
+******/
+:root{
+    --clr-rouge:#950000;
+    --clr-marron: #4c4343;
+    --clr-beige:#ebe3db;
+    --clr-blanc:#fff;
+    --anima-tion:scale(1.3);
+    --transiton: all 1.5s
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+button {
+    font-family: merienda;
+    text-align: center;
+}
+label{
+    font-family: merienda;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.header span::before,
+.header span::after,
+h2::before,
+h2::after,
+article h3::before,
+article h3::after,
+h1::before,
+h1::after, 
+h3::before,
+h3::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f005';
+    color: var(--clr-rouge);
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/******************************************************************
+             Mise en forme du header
+******************************************************************/
+.header {
+    text-align: center;
+   /* background-image: linear-gradient(to bottom, #ebe3db , white, #ebe3db); */
+    opacity: 0.8;
+    margin-block: 2rem;
+}
+
+nav {
+    background-color:var(--clr-beige);
+}
+
+.header img {
+    width: 15%;
+    transition: var(--transiton);
+    
+}
+.header img:hover,
+.header img:focus{
+    transform: rotate(360deg);
+   
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+
+
+
+header a:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-bottom: .1rem solid gray;
+    transition: all 1.5s;
+
+}
+
+nav a:hover,
+nav a:focus{
+    background-color: var(--clr-rouge);
+    color:var(--clr-blanc);
+}
+
+nav ul li a.active{
+    background-color: var(--clr-marron);
+    color: var(--clr-blanc);
+}
+
+/*******************************************************************
+fin de la mise en forme du header
+*******************************************************************/
+
+
+/*******************************************************************
+        mise en forme de la partie parent
+*******************************************************************/
+
+.parent div {
+    position: relative;
+    z-index: -1;
+}
+
+.slick-slide {
+    margin-right: 1rem;
+}
+
+.slick-prev:before {
+    position: absolute;
+    left: 1rem;
+    font-size: 2.5rem;
+    top: -1rem;
+}
+
+.slick-next:before {
+    position: absolute;
+    right: 2rem;
+    font-size: 2.5rem;
+    top:-1rem
+}
+
+.slick-dots li button:before{
+    font-size: 1rem;
+    color: var(--clr-rouge);
+}
+
+/*******************************************************************
+        fin de la partie parent
+*******************************************************************/
+
+
+/*******************************************************************
+    article 
+*******************************************************************/
+/* article welcome */
+
+.welcome {
+    font-weight: 600;
+}
+
+.welcome h1 {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/* article menu */
+
+.menus h2,
+.menus h3 {
+    text-align: center;
+}
+
+.menus section {
+    background-color: var(--clr-beige);
+    padding-block: .8rem;
+    margin-block: 2rem;
+}
+.container .menus ul li{
+    text-align: left;
+}
+
+.menus li {
+    border-bottom: 1px dashed gray;
+    padding: .6rem;
+    font-weight: 600;
+}
+.menus section ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f005';
+    color: var(--clr-rouge);
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: .7rem;
+}
+
+
+
+
+.img_hov_para{
+    position: relative;
+     width: 100%;
+     padding: 0;
+}
+.img_hov_para img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img_hov_para .para_hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(76,67,67,.4);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: 2s ease;
+}
+
+.img_hov_para:hover .para_hover{
+   transform: scale(1);
+}
+.para_hover p{
+    color: white;
+    margin: 0 ;
+    padding:3rem 7rem;
+    width: 80%;
+    font-size: 20px;
+    border: 4px solid var(--clr-blanc);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+/* .menus .img_men{
+    background-image: url("./instructions/ressources/images/meat-menu.jpg");
+}
+.menus .img_fish{
+    background-image: url("./instructions/ressources/images/fish-menu.jpg");
+}
+.menus .img_vegetarian{
+    background-image: url("./instructions/ressources/images/vegetarian-menu.jpg");
+} */
+/* .img_hov_para{
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+} */
+
+/* .menus .img_hov_para {
+    color: var(--clr-blanc);
+    font-size: 1rem;
+    opacity: 1;
+   
+} */
+
+/* .menus .img_hov_para p{
+    border: 3px solid var(--clr-blanc);
+    font-size: 1.3rem;
+    padding: 3.9rem;
+    margin: 2rem;
+
+} */
+
+/* .menus .img_hov_para .para_hover{
+    background-color: rgba(76,67,67,.9);
+    overflow: auto;
+    transition: var(--transiton);
+    transform: scaleY(1.02);
+    opacity: 0;
+}
+.menus .img_hov_para .para_hover:hover,
+.menus .img_hov_para .para_hover:focus{
+    opacity: 1;
+} */
+
+
+
+
+
+
+.menus a {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    font-weight: 600;
+    background-color: var(--clr-marron);
+    color: var(--clr-blanc);
+    padding: .5rem;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    transition: all 2s;
+   
+
+}
+
+.menus a:hover,
+.menus a:focus {
+    background-color: var(--clr-rouge);
+    color: hsla(0, 6%, 97%, 0.966);
+    transform: scale(1.02)
+}
+
+section a {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+
+}
+
+section a img {
+    width: 1.6rem;
+}
+
+section a img:hover {
+    color: black;
+}
+
+
+/*******************************************************************
+    FIN D
+*******************************************************************/
+
+
+/*******************************************************************
+   ADDRESS
+*******************************************************************/
+
+address {
+    background-image: url("./instructions/ressources/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--clr-blanc);
+    text-align: center;
+    padding-block: 1rem;
+    font-weight: 100;
+}
+
+address section h4 {
+    border-bottom: 1px dashed white;
+    padding-bottom: 1rem;
+    /* font-size: 1rem; */
+    margin-inline: 4rem;
+}
+
+address section {
+    margin-block: 2rem;
+}
+
+address section p {
+    margin-top: -.8rem;
+    font-size: 1rem;
+}
+
+address section:nth-of-type(3) a {
+    color: var(--clr-blanc);
+    padding-inline: .5rem;
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+address section:nth-of-type(3) a:hover{
+    color: #950000;
+
+}
+address section:nth-of-type(2) a{
+    padding:0;
+    transition: all 3s;
+    transform: scale(0.9);
+    background-color: none;
+    color: white;
+}
+
+
+
+button{
+    background-color: var(--clr-beige);
+    border: 1px solid var(--clr-beige);
+    padding: .4rem .8rem;
+    color: #030303;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 2s;
+    transform: scale(1.1);
+    margin-inline: .4rem;
+}
+button:hover,
+button:focus{
+    background-color:var(--clr-rouge);
+    color: var(--clr-blanc);
+}
+
+section a:hover,
+section a:focus {
+    color: var(--clr-rouge);
+    transform: scale(1.4);
+}
+
+/*******************************************************************
+            FOOTER
+*******************************************************************/
+footer .footer {
+    text-align: center;
+    background-color: #333;
+    color: var(--clr-blanc);
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.footer a {
+    color: var(--clr-blanc);
+    display: inline;
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-top: -1rem;
+}
+
+.footer img {
+    width: 10%;
+    margin-bottom: 1.5rem;
+}
+
+

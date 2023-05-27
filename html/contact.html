@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant</title>
+    <meta name="description" content=" Freshly Restaurant est un meilleur restaurant qui assure la qualité des menus">
+    <meta name="keywords" content="Restaurant, Freshly , food and drink">
+
+    <!-- Importation du jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/50408e730b.js" crossorigin="anonymous"></script>
+    <!-- Intégration du syle personnel -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- le contenu de la page web -->
+    <div class="container">
+        <!-- le header -->
+        <header class="header">
+            <a href="#">
+                <img src="../instructions/ressources/images/logo.png" alt="logo du restaurant"><span> FRESHLY
+                    RESTAURANT</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./menus.html">Menus</a></li>
+                    <li><a class="active" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin de  header -->
+
+        <!-- le contenu -->
+        <main class="main">
+            <section class="contact">
+                <h3>Contact us</h3>
+                <p>If your want to make a reservation, please complete this form.</p>
+                <p><em>Fields with <span>*</span> are required.</em></p>
+                
+                <div class="formulaire">
+                    <form action="post">
+                        <fieldset class="reservation">
+
+                            <h4>Reservation</h4>
+                            <label for="date">  <span>*</span> Date</label>
+                            <input type="date" name="date" id="date">
+                            
+                            <label for="time"> <span>*</span> Time</label>
+                            <input type="time" name="time" id="time">
+                            
+                            <label for="number"> <span>*</span> Number guests</label>
+                            <input type="number" name="Number" id="number">
+                        </fieldset>
+                        <fieldset class="detail">
+                            <h4>Details</h4>
+
+                            <label for="name"> <span>*</span> Name</label>
+                            <input type="text" id="name">
+
+                            <label for="email"> <span>*</span> Email</label>
+                            <input type="email" name="email" id="email">
+
+                            <label for="telephone"> <span>*</span> Telephone</label>
+                            <input type="text" id="telephone">
+                        </fieldset>
+                        <fieldset class="textarea">
+                            <h4>Further request</h4>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <button>RESERVE</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h3>Our location</h3>
+                <div class="localisation_maps">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--  le pied de page -->
+    <footer>
+        <address>
+            <div class="aside">
+                <section>
+                    <h4>Opening hours</h4>
+                    <p>Monday: Closed</p>
+                    <p>Tue-Wed : 9am - 10pm</p>
+                    <p>Thu-Fri : 9am - 10pm</p>
+                    <p>Sat-Sun : 5pm - 10pm</p>
+                </section>
+                <section>
+                    <h4>Contact</h4>
+                    <p>13 Christopher Street</p>
+                    <p>New York,</p>
+                    <p>NY 10014-3543</p>
+                    <p><a href="tel:+22994371002">+229 94 37 10 02</a></p>
+                </section>
+                <section>
+                    <h4>Social networks</h4>
+                    <a href="kotcho Délanno" class="fab fa-facebook-f"></a>
+                    <a href="instagram" class="fab fa-instagram"></a>
+                    <a href="pinterest" class="fab fa-pinterest-p"></a>
+                </section>
+            </div>
+        </address>
+
+        <div class="footer">
+            <img src="../logo-3wa.png" alt="logo de la 3w  Academy">
+            <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">
+                    pour l'usage personnel des étudiants.
+                    Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification -
+                    International
+                </a>.</p>
+            <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+                    href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a
+                    href="#">Catherine Denos</a>.</p> <br><br>
+                    <p style="font-size: 20px; text-align: center; color: rgb(87, 165, 42);">cet exrcice a été réalisé par <strong>Délanno KOTCHO, </strong>étudiant en informatique de dévéloppement à HIGHFIVE University</p>
+        </div>
+    </footer>
+    <!-- fin du pied de page -->
+
+
+</body>
+
+</html>
